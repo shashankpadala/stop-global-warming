@@ -1,0 +1,117 @@
+<html><script>
+  
+               /* function addItem2()
+                         {
+                              var ul = document.getElementById("dl");
+                              var li = document.createElement("li");
+                              li.setAttribute('id',"li");
+                              var d=document.getElementById("s");
+                              li.appendChild(document.createTextNode(s.value));
+                              ul.appendChild(li);
+                         }*/
+                         var decodedCooki = decodeURIComponent(document.cookie);
+                var decodedCookie=decodedCooki.split(';');
+                var count=1;
+            
+                console.log(decodedCookie);
+                         document.onreadystatechange = () => {
+                    if (document.readyState === 'complete') {
+                        for(var i=0;i<decodedCookie.length;i++){
+                            var cookarr=decodedCookie[i].split('=');
+                         if(decodedCookie[i].includes("data")){
+                                var ul = document.getElementById("dl");
+                                var li = document.createElement("li");
+                                var cook=cookarr[1].split(',');
+                                li.setAttribute('id',"li");
+                                li.appendChild(document.createTextNode(""+cook[0]));
+                                ul.appendChild(li);
+                            }
+                        }
+                        }};
+                  </script>
+        <style>
+                body{
+                        background-color: rgb(117, 134, 190);
+                }
+         #bar
+        {
+            background-color: grey;
+            margin-bottom: 20px;
+            width: 1500px;
+        }
+        #bar a
+        {
+            
+            font-size: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fcda05;
+            display: inline-block;
+            position: relative;
+        }
+        #bar td
+        {
+            width:480px;
+            text-align: center;
+        }
+
+        #bar a:hover
+        {
+            color: lime;
+        }
+        #LD{
+            text-align: left;
+            border: 2px solid white;
+            border-bottom-color: #fcda05;
+            border-top-color: #fcda05;
+            padding: 15px;
+            font-size: 24px;;
+        }
+        .post{
+        float: right;
+        margin-right: -300px;
+    }
+        #li{
+        background-color: #14ec1f;
+        border: #27ec48;
+        display: block;
+        padding: 10px;
+        font: 18px;
+        font-family: 'Calistoga', cursive;
+        border-radius: 8px;
+    }
+        </style>
+<head>
+
+</head>
+<body>
+        
+                <div id="bar">
+                                <table>
+                                    <tr>
+                                        <td><a href="/"> Home</a> </td><td><a href="/news"> news</a></td>
+                                
+                                <td><a href="/stories"> stories</a></td>
+                                        <td><a href="/profile"> profile</a></td></tr></table></div>
+
+                                        
+    
+        <center style="margin-left: 250px; text-align: left;"><h3></h3> <!--Start BawkBox Code--><script data-sil-id="5dd01d3aad2b9e0010375638">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/chatroom/5dd01d3aad2b9e0010375638?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); } else { loadWidget() } </script><div class="sil-widget-chatroom sil-widget" id="sil-widget-5dd01d3aad2b9e0010375638"><a href="//bawkbox.com/install/chatroom">Public Chatroom</a></div> <!--End BawkBox Code--></center>
+        
+    </div></div>
+    <br><br>
+    <div  class="post" >
+        <form action="/post" method="POST">
+       <input type="text" id="s" name="post">
+       <button type="submit">post</button></form>
+        <ul  id="dl" style="font-size: 20px;margin-right: 400px; width: 500px;">
+            <li id="li">
+              vsvcvdvjdhvdbvnzdcvnzbcvbcn ncbn ccc xn cn  
+            </li>
+                
+                    
+        </ul>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<html>
+<head>
+    <title>register</title>
+    
+    <style>
+    body
+    {
+        background-image:url("https://github.com/Swapna02/Stop_Global_Warming/blob/master/hendra-yudha-pratama-rDOS8pI6vLQ-unsplash.jpg?raw=true");
+        
+
+        }
+        
+              #box
+        {
+            width: 750px;
+            height:570px;
+            background-color: rgba(0,0,0,.6);
+            margin-left: 23%;
+            margin-top: 100px;
+            border: dotted black;
+        }
+        #box h1
+        {
+            color: #cbbcbf;
+            padding-top: 5px;
+            font-family: inherit;
+            text-decoration: underline;
+            font-size: 34px;
+            font-weight: 600;
+        }
+        input
+        {
+            width: 250px;
+            height: 25px;
+            border-radius: 8px;
+            border: 0px;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+        }
+        #signup
+        {
+            width: 150px ;
+            height: 35px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-family: serifx;
+            background-color:rgba(65, 234, 78, 0.94);
+            color: white;
+        }
+        #signup:hover
+        {
+            cursor: pointer;
+            background-color:rgba(230, 206, 15, 0.94);
+            width: 154px;
+            height: 38px;
+        }
+        #box p
+        {
+            font-family: serif;
+            font-size: 18px;
+            color:white;
+            margin-bottom: 20px;
+        }
+        #box a
+        {
+            color: aquamarine;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        #box a:hover
+        {
+            color: deepskyblue;
+            font-size: 20px;
+        }
+        #box td 
+        {
+            width: 250px;
+            padding: 3px;
+        }
+        #type
+        {
+             width: 250px;
+            height: 25px;
+            font-size: 18px;;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+        }
+        .alert
+        {
+            font-size: 1em;
+            color: red;
+        }
+        #reg
+        {
+            height: 50px;
+            width: 50px;
+            margin-top: -12px;
+        }
+    </style>
+    
+    </head>
+<body>
+    <div id="box">
+        <center><h1>SIGN UP</h1></center>
+            <%if(msg !=''){ %>
+                <p style="text-align: center"> <%= msg %></p>
+                <% } %>
+            <form style="padding: 20px;" action="/register" method="POST">
+                <table>
+                    <tr><td><p>USERNAME:</p></td> <td><input type="text" id="name" minlength="6" name="uname" placeholder="Enter user name" required autocomplete="off"></td></tr>
+                    <tr><td><p>MOBILE:</p></td><td> <input type="number" id="mob" name="unum" placeholder="Enter number" required onchange="mobile()" ></td ><td id="mobalert" class="alert"></td></tr>
+                    <tr><td><p>EMAIL:</p></td><td> <input type="email" id="mail" name="uemail" placeholder="Enter email" required autocomplete="off"></td></tr>
+                    <tr><td><p>PASSWORD:</p></td><td><input type="password" id="passw" name="upass" placeholder="Enter password" required onchange="pass()"></td ><td id="passalert" class="alert"></td></tr>
+                    <tr><td><p>CONFIRM PASSWORD:</p></td><td><input type="password" name="ucpass" placeholder="Confirm password" id="repassw" required onchange="repass()"></td><td id="repassalert" class="alert"></td></tr>
+                <tr><td><p>TYPE OF USER:</p></td><td><select id="type" name="utype"><option value="none" selected disabled hidden>--TYPE--</option><option value="user"> normal user</option><option value="admin">doctor</option><option value="admin">environimental specialist</option></select></td></tr></table>
+                <center><input type="submit" id="signup" value="SIGN UP" onclick="return mobile()"  onclick="return pass()" onclick="return repass()"></center></form>
+       <center>
+        <p style="margin-top: -30px;">Already have an account? <a href="/login">Login</a></p></center>
+    </div>
+    <script>
+        function mobile()
+        {
+            var num=document.getElementById("mob");
+            if(num.value.length!=10)
+                {
+                    var alert="*invalid mobile number";
+                    var cont=document.getElementById("mobalert");
+                    cont.textContent=alert;
+                    return false;
+                }
+            else{
+                var alert="";
+                    var cont=document.getElementById("mobalert");
+                    cont.textContent=alert;
+                return true;
+            }
+            
+        }
+        function pass()
+        {
+            var p1=document.getElementById("passw");
+            var low=/[a-z]/g;
+            var cap=/[A-Z]/g;
+            var num=/[0-9]/g;
+            var spl=/[!@#$%^&]/g;
+            if(p1.value.length<8)
+                {
+                    var alert="*need atleast 8 chars";
+                    var cont=document.getElementById("passalert");
+                    cont.textContent=alert; 
+                    return false;
+                }
+            else{
+                    var alert="";
+                    var cont=document.getElementById("passalert");
+                    cont.textContent=alert;
+                if(p1.value.match(low)&&p1.value.match(cap)&&p1.value.match(num)&&p1.value.match(spl))
+                    {
+                     var alert="";
+                        var cont=document.getElementById("passalert");
+                        cont.textContent=alert;
+                        return true;
+                    }
+                else
+                    {
+                       
+                        var alert="*should contain atleast 1 lowercase,1 upper case,1 number,1 spl charachter";
+                    var cont=document.getElementById("passalert");
+                    cont.textContent=alert;
+                        return false;
+                    }
+            }
+        }
+        function repass()
+        {
+            var v1=document.getElementById("repassw");
+            var v2=document.getElementById("passw");
+            if(v1.value==v2.value)
+                {
+                     var alert="";
+                        var cont=document.getElementById("repassalert");
+                        cont.textContent=alert;
+                    return true;
+                }
+            else{
+                var alert="*password not matched";
+                var cont=document.getElementById("repassalert");
+                        cont.textContent=alert;
+                return false;
+            }
+        }
+       
+    </script>
+    </body></html>

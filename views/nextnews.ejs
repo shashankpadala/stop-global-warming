@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script>
+            document.onreadystatechange=() => {
+                if(document.readyState==='complete'){
+
+                
+            
+                var request = new XMLHttpRequest()
+                request.open('GET', 'https://newsapi.org/v2/everything?q=climate&from=2019-11-11&to=2019-11-11&sortBy=popularity&apiKey=c8c86aeee227401cb84bac25290abfb0', true)
+                var data2;
+    request.onload = function() {
+      // Begin accessing JSON data here
+      var data = JSON.parse(this.response)
+    var imag9= document.getElementById('img9');
+     imag9.src=data.articles[8].urlToImage;
+     document.getElementById('head9').innerHTML=data.articles[8].title;
+     document.getElementById('aut9').innerHTML=data.articles[8].author;
+     document.getElementById('disp9').innerHTML=data.articles[8].description;
+     document.getElementById('head9').href=data.articles[8].url;
+      // Log each movie's title
+      var imag12= document.getElementById('img12');
+     imag12.src=data.articles[11].urlToImage;
+     document.getElementById('head12').innerHTML=data.articles[11].title;
+     document.getElementById('aut12').innerHTML=data.articles[11].author;
+     document.getElementById('disp12').innerHTML=data.articles[11].description;
+     document.getElementById('head12').href=data.articles[11].url;
+    
+     var imag13= document.getElementById('img13');
+     imag13.src=data.articles[12].urlToImage;
+     document.getElementById('head13').innerHTML=data.articles[12].title;
+     document.getElementById('aut13').innerHTML=data.articles[12].author;
+     document.getElementById('disp13').innerHTML=data.articles[12].description;
+     document.getElementById('head13').href=data.articles[12].url;
+    
+    
+     var imag14= document.getElementById('img14');
+     imag14.src=data.articles[13].urlToImage;
+     document.getElementById('head14').innerHTML=data.articles[13].title;
+     document.getElementById('aut14').innerHTML=data.articles[13].author;
+     document.getElementById('disp14').innerHTML=data.articles[13].description;
+     document.getElementById('head14').href=data.articles[13].url;
+     
+     var imag15= document.getElementById('img15');
+     imag15.src=data.articles[14].urlToImage;
+     document.getElementById('head15').innerHTML=data.articles[14].title;
+     document.getElementById('aut15').innerHTML=data.articles[14].author;
+     document.getElementById('disp15').innerHTML=data.articles[14].description;
+     document.getElementById('head15').href=data.articles[14].url;
+    
+     var imag16= document.getElementById('img16');
+     imag16.src=data.articles[15].urlToImage;
+     document.getElementById('head16').innerHTML=data.articles[15].title;
+     document.getElementById('aut16').innerHTML=data.articles[15].author;
+     document.getElementById('disp16').innerHTML=data.articles[15].description;
+     document.getElementById('head16').href=data.articles[15].url;
+    
+     var imag17= document.getElementById('img17');
+     imag17.src=data.articles[9].urlToImage;
+     document.getElementById('head17').innerHTML=data.articles[9].title;
+     document.getElementById('aut17').innerHTML=data.articles[9].author;
+     document.getElementById('disp17').innerHTML=data.articles[9].description;
+     document.getElementById('head17').href=data.articles[9].url;
+    
+     var imag18= document.getElementById('img18');
+     imag18.src=data.articles[10].urlToImage;
+     document.getElementById('head18').innerHTML=data.articles[10].title;
+     document.getElementById('aut18').innerHTML=data.articles[10].author;
+     document.getElementById('disp18').innerHTML=data.articles[10].description;
+     document.getElementById('head18').href=data.articles[10].url;
+    
+    
+    }
+    // Send request
+    request.send()
+}}
+            </script>
+    <style>
+        img{
+            width: 250px;
+            padding: 20px;
+        }
+        #t1{
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+        
+        #t1 td{
+            padding-bottom: 39 px;
+            width: 500px;
+            border: 2px solid white;
+            
+            border-bottom-color:burlywood;
+        }
+        #d1{
+            padding-top: 15px;
+        }
+        #bar
+        {
+            background-color: grey;
+            margin-bottom: 20px;
+            width: 1400px;
+        }
+        #bar a
+        {
+            
+            font-size: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fcda05;
+            display: inline-block;
+            position: relative;
+        }
+        #bar td
+        {
+            width:480px;
+            text-align: center;
+        }
+
+        #bar a:hover
+        {
+            color: lime;
+        }
+        #LD{
+            text-align: left;
+            border: 2px solid white;
+            border-bottom-color: #fcda05;
+            border-top-color: #fcda05;
+            padding: 15px;
+            font-size: 30px;;
+        }
+        #t1 th{
+            
+            padding-top: 40px;
+            text-align: left;
+            width: 100px;
+        }
+        .prev{
+            text-align: center;
+            font-size: 30px;
+            
+        }
+        #pre{
+            text-align: right;
+            padding-top: 40px;
+            padding: 10px;
+            border-bottom-color: white;
+        }
+        #nex{
+            text-align: left;
+            padding-top: 40px;
+            padding: 10px;
+            border-bottom-color: white;
+        }
+    </style>
+    <title>News</title>
+</head>
+<body>
+        <div id="bar">
+                <table>
+                    <tr>
+                        <td><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a> </td><td><a href="/news"><i class="fa fa-newspaper-o" aria-hidden="true"></i> news</a></td>
+                
+                <td><a href="/stats"><i class="fa fa-bar-chart"></i> stats</a></td>
+                        <td><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> login</a></td></tr></table></div>
+    <table id="t1">
+        <tr>
+            <td colspan="2" style=" font-size:18px; padding: 10px;border-bottom-color: white;"><b style="font-size: 30px;">Global Warming: News, Facts, Causes & Effects</b><br><br>
+                    Global warming is the term used to describe a gradual increase in the average temperature of the Earth's atmosphere and its oceans, a change that is believed to be permanently changing the Earth’s climate. There is great debate among many people, and sometimes in the news, on whether global warming is real (some call it a hoax). But climate scientists looking at the data and facts agree the planet is warming.While many view the effects of global warming to be more substantial and more rapidly occurring than others do, the scientific consensus on climatic changes related to global warming is that the average temperature of the Earth has risen between 0.4 and 0.8 °C over the past 100 years. The increased volumes of carbon dioxide and other greenhouse gases released by the burning of fossil fuels, land clearing, agriculture, and other human activities, are believed to be the primary sources of the global warming that has occurred over the past 50 years.Scientists from the Intergovernmental Panel on Climate carrying out global warming research have recently predicted that average global temperatures could increase between 1.4 and 5.8 °C by the year 2100. Changes resulting from global warming may include rising sea levels due to the melting of the polar ice caps, as well as an increase in occurrence and severity of storms and other severe weather events.
+                <br><br><br></td>
+        </tr>
+        <tr>
+            <th id="LD" colspan="2">LATEST UPDATES</th>
+        </tr>
+        <tr>
+            <th><img src="pics9.jpg" alt="Not found" id="img9"></th>
+            <td><a id="head9"  href="https://www.livescience.com/66084-july-2019-hottest-month-ever.html"><b>July May Have Been the Hottest Month Ever Recorded, UN Says</b></a>
+                <p id="aut9">
+                        By Brandon Specktor August 02, 2019</p>
+                        <label id="disp9">Following the hottest June ever recorded, July 2019 may have been the single warmest month in history.</label> </td>
+        </tr>
+        <tr>
+            <th><img src="pics10.jpg" alt="Not found" id="img12"></th>
+            <td><a  id="head12" href="https://www.livescience.com/66047-200-dead-reindeer-norway.html"><b>More Than 200 Reindeer Found Dead in Norway, Starved by Climate Change</b></a>
+                <p id="aut12">
+                        By Mindy Weisberger July 29, 2019</p>
+                        <label id="disp12">Heavy rainfall in December buried plants under a heavy layer of ice.</label> </td>
+        </tr>
+        <tr>
+            <th><img src="pics11.jpg" alt="Not found" id="img13"></th>
+            <td id="d1"><a id="head13"  href="https://www.livescience.com/66041-heatwave-europe-greenland.html"><b>After Scorching Europe, Heat Wave Is Poised to Melt Greenland</b></a>
+                <p id="aut13">
+                        By Mindy Weisberger July 26, 2019</p>
+                        <label id="disp13">Heat that shattered records in Europe this week is on the move. </label></td>
+        </tr>
+        <tr>
+            <th><img src="pics12.jpg" alt="Not found" id="img14"></th>
+            <td><a  id="head14" href="https://www.livescience.com/66036-glacier-melting.html"><b>The Ice Is Melting Even Faster Than They Thought</b></a>
+                <p id="aut14">
+                    By Rafi Letzter July 26, 2019</p><label id="disp14">A new study shows that the ice at the bottoms of submerged glaciers could be melting 100 times faster than anyone thought.</label> </td>
+        </tr>
+        <tr>
+            <th><img src="pics13.jpg" alt="Not found" id="img15"></th>
+            <td><a  id="head15" href="https://www.livescience.com/66032-medieval-megadroughts-return-global-warming.html"><b>Civilization-Collapsing Megadroughts of Medieval Times Could Be in Store for a Warming Earth</b></a>
+                <p id="aut15">
+                        By Charles Q. Choi July 26, 2019</p><label id="disp15">From the 800s to the 1400s, about a dozen megadroughts struck the American Southwest, and all lasted longer than a decade.</label> </td>
+        </tr>
+        <tr>
+            <th><img src="pics14.jpg" alt="Not found" id="img16"></th>
+            <td><a id="head16"  href="https://www.livescience.com/65958-florida-coral-reefs-nitrogen.html"><b>We Finally Know Why Florida's Coral Reefs Are Dying, and It's Not Just Climate Change</b></a>
+                <p id="aut16">
+                        By Rafi Letzter July 17, 2019</p><label id="disp16">Hot water is killing Florida's coral reefs. But it's not the only factor bleaching them white. </label> </td>
+        </tr>
+        <tr>
+            <th><img src="pics15.jpg" alt="Not found" id="img17"></th>
+            <td><a  id="head17" href="https://www.livescience.com/65953-climate-change-destroying-joshua-trees.html"><b>Joshua Trees Will Be All-But-Extinct by 2070 Without Climate Action, Study Warns</b></a>
+                <p id="aut17">
+                        By Brandon Specktor July 17, 2019</p><label id="disp17">More than 80% of California's iconic Joshua trees are likely to die at the hands of drought and fire over the next 50 years — but there's still time to save them from extinction. </label> </td>
+        </tr>
+        <tr>
+            <th><img src="pics16.jpg" alt="Not found" id="img18"></th>
+            <td><a id="head18"  href="https://www.livescience.com/65880-planting-trees-fights-climate-change.html"><b>Want to Fight Climate Change? Plant 1 Trillion Trees.</b></a>
+                <p id="aut18">
+                        By Laura Geggel July 05, 2019</p><label id="disp18">Want to help save the world from climate change? Then grab some seeds, or some seedlings, and start planting trees like there's no tomorrow.</label> </td>
+        </tr>
+        <tr >
+            <td id="pre" style="border-bottom-color: white;"> <input type="button" value="prev" class="prev" onclick="location.href='/news'"></td>
+            <td id="nex" style="border-bottom-color: white;"> <input type="button" value="next" class="prev" onclick="location.href='/nextnews'"></td>
+        </tr>
+    </table>
+   
+</body>
+</html>

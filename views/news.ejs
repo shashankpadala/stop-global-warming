@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+            var request = new XMLHttpRequest()
+            request.open('GET', 'https://newsapi.org/v2/everything?q=climate&from=2019-11-11&to=2019-11-11&sortBy=popularity&apiKey=c8c86aeee227401cb84bac25290abfb0', true)
+            var data2;
+request.onload = function() {
+  // Begin accessing JSON data here
+  var data = JSON.parse(this.response)
+var imag1= document.getElementById('img1');
+ imag1.src=data.articles[0].urlToImage;
+ document.getElementById('head1').innerHTML=data.articles[0].title;
+ document.getElementById('aut1').innerHTML=data.articles[0].author;
+ document.getElementById('disp1').innerHTML=data.articles[0].description;
+ document.getElementById('head1').href=data.articles[0].url;
+  // Log each movie's title
+  var imag2= document.getElementById('img2');
+ imag2.src=data.articles[1].urlToImage;
+ document.getElementById('head2').innerHTML=data.articles[1].title;
+ document.getElementById('aut2').innerHTML=data.articles[1].author;
+ document.getElementById('disp2').innerHTML=data.articles[1].description;
+ document.getElementById('head2').href=data.articles[1].url;
+
+ var imag3= document.getElementById('img3');
+ imag3.src=data.articles[2].urlToImage;
+ document.getElementById('head3').innerHTML=data.articles[2].title;
+ document.getElementById('aut3').innerHTML=data.articles[2].author;
+ document.getElementById('disp3').innerHTML=data.articles[2].description;
+ document.getElementById('head3').href=data.articles[2].url;
+
+
+ var imag4= document.getElementById('img4');
+ imag4.src=data.articles[3].urlToImage;
+ document.getElementById('head4').innerHTML=data.articles[3].title;
+ document.getElementById('aut4').innerHTML=data.articles[3].author;
+ document.getElementById('disp4').innerHTML=data.articles[3].description;
+ document.getElementById('head4').href=data.articles[3].url;
+ 
+ var imag5= document.getElementById('img5');
+ imag5.src=data.articles[4].urlToImage;
+ document.getElementById('head5').innerHTML=data.articles[4].title;
+ document.getElementById('aut5').innerHTML=data.articles[4].author;
+ document.getElementById('disp5').innerHTML=data.articles[4].description;
+ document.getElementById('head5').href=data.articles[4].url;
+
+ var imag6= document.getElementById('img6');
+ imag6.src=data.articles[5].urlToImage;
+ document.getElementById('head6').innerHTML=data.articles[5].title;
+ document.getElementById('aut6').innerHTML=data.articles[5].author;
+ document.getElementById('disp6').innerHTML=data.articles[5].description;
+ document.getElementById('head6').href=data.articles[5].url;
+
+ var imag7= document.getElementById('img7');
+ imag7.src=data.articles[6].urlToImage;
+ document.getElementById('head7').innerHTML=data.articles[6].title;
+ document.getElementById('aut7').innerHTML=data.articles[6].author;
+ document.getElementById('disp7').innerHTML=data.articles[6].description;
+ document.getElementById('head7').href=data.articles[6].url;
+
+ var imag8= document.getElementById('img8');
+ imag8.src=data.articles[7].urlToImage;
+ document.getElementById('head8').innerHTML=data.articles[7].title;
+ document.getElementById('aut8').innerHTML=data.articles[7].author;
+ document.getElementById('disp8').innerHTML=data.articles[7].description;
+ document.getElementById('head8').href=data.articles[7].url;
+
+
+}
+// Send request
+request.send()
+
+        </script>
+    <style>
+    @font-face {
+      font-family: 'Cabin', sans-serif;
+       font-family: 'Bebas Neue', cursive;         
+      src: url("https://fonts.googleapis.com/css?family=Bebas+Neue|Cabin&display=swap");
+              
+    }
+        body
+        {
+          font-family: 'Cabin', sans-serif;
+        }
+        img{
+            width: 250px;
+            padding: 20px;
+        }
+        #t1{
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+        #t1 td{
+            padding-bottom: 39 px;
+            width: 480px;
+            border: 2px solid white;
+            
+            border-bottom-color:burlywood;
+        }
+        #d1{
+            padding-top: 15px;
+        }
+        #bar
+        {
+            background-color: grey;
+            margin-bottom: 20px;
+            width: 1400px;
+        }
+        #bar a
+        {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fcda05;
+            display: inline-block;
+            position: relative;
+        }
+        #bar td
+        {
+            width:480px;
+            text-align: center;
+        }
+
+        #bar a:hover
+        {
+            color: lime;
+        }
+        #LD{
+            text-align: left;
+            border: 2px solid white;
+            border-bottom-color: #fcda05;
+            border-top-color: #fcda05;
+            padding: 15px;
+            font-size: 24px;;
+        }
+        .prev{
+            text-align: center;
+            font-size: 30px;
+            
+        }
+        #pre{
+            text-align: right;
+            padding-top: 40px;
+            padding: 10px;
+            border-bottom-color: white;
+        }
+        #nex{
+            text-align: left;
+            padding-top: 40px;
+            padding: 10px;
+            border-bottom-color: white;
+        }
+    </style>
+    <title>News</title>
+</head>
+<body>
+        <div id="bar">
+                <table>
+                    <tr>
+                        <td><a href="/"> Home</a> </td><td><a href="/news"> news</a></td>
+                
+                <td><a href="/stats"> chat</a></td>
+                        <td><a href="/login"> login</a></td></tr></table></div>
+    <table id="t1">
+        <tr>
+            <td colspan="2" style=" font-size:18px; padding: 10px;border-bottom-color: white;"><b style="font-size: 30px;">Global Warming: News, Facts, Causes & Effects</b><br><br>
+                    Global warming is the term used to describe a gradual increase in the average temperature of the Earth's atmosphere and its oceans, a change that is believed to be permanently changing the Earth’s climate. There is great debate among many people, and sometimes in the news, on whether global warming is real (some call it a hoax). But climate scientists looking at the data and facts agree the planet is warming.While many view the effects of global warming to be more substantial and more rapidly occurring than others do, the scientific consensus on climatic changes related to global warming is that the average temperature of the Earth has risen between 0.4 and 0.8 °C over the past 100 years. The increased volumes of carbon dioxide and other greenhouse gases released by the burning of fossil fuels, land clearing, agriculture, and other human activities, are believed to be the primary sources of the global warming that has occurred over the past 50 years.Scientists from the Intergovernmental Panel on Climate carrying out global warming research have recently predicted that average global temperatures could increase between 1.4 and 5.8 °C by the year 2100. Changes resulting from global warming may include rising sea levels due to the melting of the polar ice caps, as well as an increase in occurrence and severity of storms and other severe weather events.
+                <br><br><br></td>
+        </tr>
+        <tr>
+            <th id="LD" colspan="2">LATEST UPDATES</th>
+        </tr>
+        <tr>
+            <th><img src="pics1.jpg" alt="Not found" id="img1"></th>
+            <td ><a id="head1"  href="https://news.yahoo.com/photos-activists-arrested-in-global-warming-protests-in-europe-150700559.html;_ylt=AwrXgyIaAJ9dyhsAVVrAHAx.;_ylu=X3oDMTByb2lvbXVuBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDBHNlYwNzcg--"><b>PHOTOS: Activists arrested in global warming protests in Europe</b></a>
+                <p id="aut1">By Charles Q. Choi July 26, 2019</p>
+               <label id="disp1"> Activists with the Extinction Rebellion movement blocked major roads in London, Berlin and Amsterdam...</label></td>
+        </tr>
+        <tr>
+            <th><img src="pics2.jpg" alt="Not found" id="img2"></th>
+            <td><a id="head2" href="https://news.yahoo.com/not-real-news-look-didnt-191433634.html;_ylt=AwrXgyIaAJ9dyhsAV1rAHAx.;_ylu=X3oDMTByYnR1Zmd1BGNvbG8DZ3ExBHBvcwMyBHZ0aWQDBHNlYwNzcg--"><b>NOT REAL NEWS: A look at what didn't happen this week</b></a>
+                <p id="aut2">
+                        By Laura Geggel July 05, 2019</p>
+                        <label id="disp2"> She told The Associated Press that scientists at the federal agency believe as much as 100 percent...</label></td>
+        </tr>
+        <tr>
+            <th><img src="pics3.jpg" alt="Not found" id="img3"></th>
+            <td id="d1"><a id="head3" href="https://economictimes.indiatimes.com/news/international/world-news/odds-favour-greta-thunberg-for-peace-prize-but-experts-sceptical/recipient-of-alternative-nobel/slideshow/71500251.cms"><b>Odds favour Greta Thunberg for Peace Prize, but experts sceptical - Recipient of 'alternative Nobel'</b></a>
+                <p id="aut3">
+                        By Rafi Letzter July 08, 2019</p>
+                        <label id="disp3"> Bookmakers seem confident that Swedish teen climate activist Greta Thunberg is a shoo-in for the...</label></td>
+        </tr>
+        <tr>
+            <th><img src="pics4.jpg" alt="Not found" id="img4"></th>
+            <td><a id="head4" href="https://finance.yahoo.com/news/shipping-overtaking-aviation-emission-reductions-123039049.html"><b>Shipping is overtaking aviation in emission reductions</b></a>
+                <p id="aut4">
+                        By Isobel Whitcomb July 13, 2019</p>
+                        <label id="disp4"> Shipping and aviation emit more than 5% (pdf) of the world’s greenhouse gases, not to mention black...</label></td>
+        </tr>
+        <tr>
+            <th><img src="pics5.jpg" alt="Not found" id="img5"></th>
+            <td><a id="head5" href="https://economictimes.indiatimes.com/news/international/world-news/e-cigarettes-five-things-to-know/puff-up/slideshow/71442124.cms"><b>E-cigarettes: Five things to know - Puff up - The Economic Times</b></a>
+                <p id="aut5">
+                        By Yasemin Saplakoglu July 15, 2019</p>
+                        <label id="disp5"> E-cigarettes have become hugely popular in the past decade but a rash of vaping-linked deaths and...</label></td>
+        </tr>
+        <tr>
+            <th><img src="pics6.jpg" alt="Not found" id="img6"></th>
+            <td><a id="head6" href="https://www.livescience.com/alps-glacier-risk-of-collapse.html"><b>Giant Chunk of Mont Blanc Glacier on the Brink of Collapse, Officials Warn</b></a>
+                <p id="aut6">
+                    By Yasemin Saplakoglu 17 days ago</p>
+                    <label id="disp6"> Italian officials have ordered the evacuation of mountain huts and closed down roads near the Planpincieux Glacier, which is at risk of collapse.</label> </td>
+        </tr>
+        <tr>
+            <th><img src="pics7.jpg" alt="Not found" id="img7"></th>
+            <td><a id="head7" href="https://www.livescience.com/ipcc-special-climate-report-oceans-ice.html"><b>Human Disruption of Earth's Oceans and Ice is 'Unprecedented,' Says 'Chilling and Compelling' Climate Report</b></a>
+                <p id="aut7">
+                    By Mindy Weisberger 18 days ago</p>
+                    <label id="disp7"> Unless climate action is swift and dramatic, future upheaval will be catastrophic. </label></td>
+        </tr>
+        <tr>
+            <th><img src="pics8.jpg" alt="Not found" id="img8"></th>
+            <td><a id="head8" href="https://www.livescience.com/66008-why-oil-in-arctic.html"><b>Why Is There So Much Oil in the Arctic?</b></a>
+                <p id="aut8">
+                    By Emma Bryce August 03, 2019</p>
+                    <label id="disp8"> Beneath the Arctic lie billions of barrels of oil. But as the international energy race intensifies, we wonder, how did all that oil get there in the first place?</label> </td>
+        </tr>
+        <tr >
+            <td id="pre" style="border-bottom-color: white;"> <input type="button" value="prev" class="prev" onclick="location.href='/news'"></td>
+            <td id="nex" style="border-bottom-color: white;"> <input type="button" value="next" class="prev" onclick="location.href='/nextnews'"></td>
+        </tr>
+    </table>
+   
+</body>
+</html>
+

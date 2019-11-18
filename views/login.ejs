@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>LOGIN</title>
+    
+    <style>
+      @font-face {
+      font-family: 'Indie Flower', cursive;
+      src: url("https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower&display=swap");
+              
+    }
+    body
+    {
+        background-image: url(https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/hendra-yudha-pratama-rDOS8pI6vLQ-unsplash.jpg?raw=true);
+
+    }
+        #box
+        {
+            width: 475px;
+            height:350px;
+            background-color: rgba(0,0,0,.6);
+            margin-left: 500px;
+            margin-top: 200px;
+            font-family: inherit;
+        }
+        #box h1
+        {
+            color: #cbbcbf;
+            font-size: 30px;
+            font-weight: 700;
+            margin-top: 5px;
+            text-decoration: underline;
+            padding-top: 12px;
+        }
+        input
+        {
+            width: 350px;
+            height: 35px;
+            border-radius: 8px;
+            border: 0px;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            font-family:serif;
+        }
+        #login:hover
+        {
+            cursor: pointer;
+            background-color:rgba(230, 206, 15, 0.94);
+            width: 154px;
+            height: 38px;
+        }
+        #login
+        {
+            width: 150px ;
+            height: 35px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-family: serifx;
+            background-color:rgba(65, 234, 78, 0.94);
+            color: white;
+        }
+        #box a
+        {
+            color: aquamarine;
+            text-decoration: none;
+        }
+        #box a:hover
+        {
+            color: deepskyblue;
+            font-size: 1.05em;
+        }
+    
+    </style>
+    
+    </head>
+<body>
+    <div id="box">
+        <center><h1>LOG IN</h1>
+           
+            <form action="/login" method="POST">
+                <input type="email" id="mail" placeholder="email" autocomplete="off" name="uemail" required>
+                <input type="password" id="pass" placeholder="password" name="upass" required>
+            <input type="submit" id="login" value="LOG IN"></form>
+        
+        <p style="font-size: 18px;color: white; margin-top: 2px;font-family: 'Indie Flower', cursive;">Dont have an account? <a href="/register">Join</a></p></center>
+    </div>
+    </body>
+    
+    </html>

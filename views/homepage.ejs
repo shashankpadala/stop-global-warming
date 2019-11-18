@@ -1,0 +1,366 @@
+<html>
+        <head>
+            <title>HOME</title>
+            
+            <style>
+	      @font-face {
+      font-family: 'Pacifico', cursive;
+      font-family: 'Acme', sans-serif;
+      src: url("https://fonts.googleapis.com/css?family=Acme|Pacifico&display=swap");
+    }
+    
+        body{
+             font-family: 'Pacifico', cursive;
+        }
+        #flipdiv table
+        {
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        #flipdiv td
+        {
+            width: 650px;
+            height:350px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+        }
+        img
+        {
+            width:600px;
+            height:300px;
+        }
+.flip-box {
+  background-color: transparent;
+  width: 600px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+#science
+        {
+            background-color: skyblue;
+            color:whitesmoke;
+        }
+        #impacts
+        {
+            background-color: black;
+            color: red;
+        }
+        #soln
+        {
+            background-color: lime;
+            color:white;
+        }
+        .flip-box-back h1
+        {
+            margin-top: 130px;
+            font-family: cursive;
+        }
+        #polar
+        {
+            width:1200px;
+            padding-left: 160px;
+            padding-top: 0px;;
+            height: 600px;
+        }
+        #change
+        {
+             width: 1200px;
+            padding-left: 160px;
+            padding-top: 0px;;
+            height: 600px;
+        }
+        #sol
+        {
+             width: 1200px;
+            padding-left: 160px;
+            padding-top: 0px;;
+            height: 600px;
+            
+        }
+        #head
+        {
+                        font-size: 3em;
+            padding-left: 600px;
+        }
+        #about
+        {
+             font-size: 1.4em;
+        }
+        #bar
+        {
+            background-color: grey;
+        }
+                .column{float:left;width:18%;padding:10px;}
+        #bar a
+        {
+            
+            font-size: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fcda05;
+            display: inline-block;
+            position: relative;
+	    font-family: 'Acme', sans-serif;
+        }
+        #bar td
+        {
+            width:480px;
+            text-align: center;
+        }
+
+        #bar a:hover
+        {
+            color: lime;
+        }
+        #earth
+        {
+            width:500px;
+            height: 500px;
+            background:url(https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/BigEarth.jpg?raw=true);
+            
+            border-radius: 50%;
+            margin-left: 450px;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            animation-name: rotate;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            box-shadow: -80px 15px 80px 10px rgba(0,0,0,.9) inset;
+        }
+        @keyframes rotate
+        {
+            0%{background-position: 0 0;}
+            100%{background-position: 1010px 0;}
+        }
+        #arr
+        {
+            width: 50px;
+            height: 50px;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bounce
+        {
+            0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(30px);
+  }
+  60% {
+    transform: translateY(15px);
+  }
+        }
+        
+        #cap
+        {
+        font-size: 1.6em;
+        }
+        #intro 
+        {
+            background-color: lightblue;
+            cursor: text;
+        }
+        #intro th
+        {
+            font-size: 3em;
+            text-align:justify;
+        }
+        #intro td
+        {
+            width: 780px;
+        }
+        #intro h1
+        {
+            font-size: 3em;
+            
+        }
+        #intro p
+        {
+            font-size: 1.4em;
+        }
+        #more
+        {
+            font-size: 3em;
+            
+        }
+        .float{
+	position:fixed;
+	width:100px;
+	height:100px;
+	bottom:30px;
+	right: 2px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+            font-size: 2em;
+            box-shadow: 2px 2px 3px #999;
+        }
+        #envelo{
+	margin-top:33px;
+            
+        }
+        #img
+        {
+            width: 50px;
+            height: 50px;
+        }
+        #img1
+        {
+            width: 60px;
+            height: 60px;
+            
+        }
+               
+    </style>
+            </head>
+        <body>
+            <div id="bar">
+                <table>
+                    <tr>
+                            <td><a href="/profile"> <img src="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/text-lines.png?raw=true" id="img">login</a></td>
+                        <td><a href="/news"> <img src="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/text-lines.png?raw=true" id="img">news</a></td>
+                <td><a href="/stories"><img src="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/storyboard.png?raw=true" id="img">stories</a> </td>
+                <td><a href="/stats"><img src="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/conversation.png?raw=true" id="img1"> chat</a></td>
+                        <td><a href="/post"><img src="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/login1.png?raw=true" id="img">Posts</a></td></tr></table></div>
+                    <a href="https://climate.nasa.gov"><div id="earth"></div></a>
+            <center>    <center><img src="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/arrow-up.png?raw=true" aria-hidden="true" id="arr" ><br>
+                <p style="font-size: 2em"><i>Click  the globe to Check the global climate changes given by NASA</i></p></center>
+            
+            <div id="intro">
+                <center><h1>What's stake?</h1></center>
+            <table>
+                <tr>
+                    <td><p><b>Global warming is already having significant and harmful effects on our communities, our health, and our climate.</b><br> Sea level rise is accelerating. The number of large wildfires is growing. Dangerous heat waves are becoming more common. Extreme storm events are increasing in many areas. More severe droughts are occurring in others. <br>
+                        <b>We must take immediate action to address global warming</b><br> or these consequences will continue to intensify, grow ever more costly, and increasingly affect the entire planetincluding you, your community, and your family.</p></td><td><p><b>The good news is that we have the practical solutions at hand to</b> dramatically reduce our carbon emissions, slow the pace ofglobal warming, and pass on a healthier, safer world to future generations.
+        
+        With your help, we can accomplish it. Even in these difficult times for climate action, we can make a difference. 
+        
+                    Together, we can tackle global warming.</p></td></tr></table></div>
+                <center><h1 id="more">Know more:</h1></center>
+        <div id="flipdiv"><table>
+            <tr><td>
+                <a href="#head"><div class="flip-box" onclick="science()">
+          <div class="flip-box-inner" >
+            <div class="flip-box-front">
+                <img src ="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/noaa-OgVT4yfpIxk-unsplash.jpg?raw=true" ></div>
+              <div class="flip-box-back" id="science">
+                  <h1>SCIENCE</h1></div></div></div></a></td>
+                <td><a href="#head"><div class="flip-box" onclick="impacts()">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src ="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/climate-change-2254711_1920.jpg?raw=true" ></div>
+              <div class="flip-box-back" id="impacts">
+                  <h1>IMPACTS</h1></div></div></div></a>
+                </td></tr>
+            <tr>
+                <td><a href="#head"><div class="flip-box" onclick="solution()">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src ="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/assistance-990332_1920.jpg?raw=true" ></div>
+              <div class="flip-box-back" id="soln">
+                  <h1>SOLUTION</h1></div></div></div></a></td>
+                <td><a href="/pollution"><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src ="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/johannes-plenio-5_9inhy4NSE-unsplash.jpg?raw=true" ></div>
+              <div class="flip-box-back">
+                  <h1>POLLUTION</h1></div></div></div></a></td></tr></table></div>
+            <h1 id="head"></h1>
+            <p id="about"></p>
+            <script>
+            function science()
+                {
+                    var v1=document.getElementById("head");
+                    var v2=document.getElementById("about");
+                    v1.textContent="SCIENCE";
+                    var v3='<img src="noaa-OgVT4yfpIxk-unsplash.jpg" id="polar">'+'<br>'+'<b>';
+                    v3 += "Global warming is happening now." + '</b>'+ "The planet's temperature is rising. The trend is clear and unmistakable."+"Every one of the past 40 years has been warmer than the 20th century average. 2016 was the hottest year on record. The 12 warmest years on record have all occurred since 1998."+"Globally, the average surface temperature has increased more than one degree Fahrenheit since the late 1800s. Most of that increase has occurred over just the past three decades."+'<b>'+"We are the cause."+'</b>'+"We are overloading our atmosphere with carbon dioxide, which traps heat and steadily drives up the planet’s temperature. Where does all this carbon come from? The fossil fuels we burn for energy,coal, natural gas, and oil plus the loss of forests due to deforestation, especially in the tropics."+'<b>'+"The scientific evidence is clear."+'</b>'+"Within the scientific community, there is no debate. An overwhelming majority of climate scientists agree that global warming is happening and that human activity is the primary cause."+'<br>'+'<a href="https://www.ucsusa.org/our-work/global-warming/science-and-impacts/global-warming-science">more about global warming science>'+'</a>';
+                    v2.innerHTML=v3;
+                }
+                function impacts()
+                {
+                    var v1=document.getElementById("head");
+                    var v2=document.getElementById("about");
+                    v1.textContent="IMPACTS";
+                    var v3='<img id="change" src="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/climate-change-2254711_1920.jpg?raw=true">'+
+                '<p>'+"Global warming is already having significant and costly effects and these consequences will only intensify as the planet’s temperature continues to rise.Accelerating Sea Level Rise  Global warming is accelerating the rate of sea level rise and dramatically increasing coastal flooding risks, especially on the U.S. East Coast and Gulf of Mexico."+'<b>'+"Longer and More Damaging Wildfire Seasons  Wildfires"+'</b>'+"are increasing and wildfire season is getting longer in the Western U.S. as temperatures rise."+'</p>'+'<p>'+'<b>'+"More Frequent and Intense Heat Waves"+'</b>'+"Dangerously hot weather is already occurring more frequently than it did 60 years ago.Costly and Growing Health Impacts Climate change has significant implications for our health, including increased air pollution and a longer and more intense allergy season.Heavier Precipitation and Flooding  As temperatures increase, more rain falls during the heaviest downpours, increasing the risk of flooding events."+'<br>'+'<a href="https://climate.nasa.gov/effects/">Learn more about global warming impacts </a>';
+                    v2.innerHTML=v3;
+                }
+                function solution()
+                {
+                     var v1=document.getElementById("head");
+                    var v2=document.getElementById("about");
+                    v1.textContent="SOLUTION";
+                    var v3='<img src="assistance-990332_1920.jpg" id="sol">'+
+                '<p>'+'<b style="font-size: 2em">'+"Reduce emissions"+'</b>'+'<br>'+"We must significantly reduce the heat trapping emissions we are putting into the atmosphere. As individuals, we can help by taking action to reduce our personal carbon emissions. But to fully address the threat of global warming, we must demand action from our elected leaders."+'<br>'+'<a href="https://www.ucsusa.org/clean-vehicles/car-emissions-and-global-warming">Learn more about reducing global warming emissions</a>'+'<br>'+'<b style="font-size: 2em">'+"Stop deforestation"+'</b>'+'<br>'+"Tropical deforestation accounts for about 10 percent of the world’s heat-trapping emissions. Reducing tropical deforestation can significantly lower global warming emissions and plays an integral role in a comprehensive long-term solution to global warming."+'<br>'+'<a href="https://www.theworldcounts.com/stories/How-Can-We-Stop-Deforestation">'+"Learn more about stopping deforestation"+''+'</a>'+'</p>'+'<p>'+'<b style="font-size: 2em">'+"Fight misinformation"+'</b>'+'<br>'+"Why has it been so difficult to achieve meaningful solutions to global warming? Media pundits, partisan think tanks, and special interest groups raise doubts about the truth of global warming. This barrage of misinformation misleads and confuses the public — and makes it more difficult to implement effective solutions."+'<br>'+
+        '<a href="https://www.ucsusa.org/our-work/global-warming/solutions/global-warming-solutions-fight-misinformation">'+"Learn more about fighting misinformation"+'</a>'+'<br>'+'<b style="font-size: 2em">'+"Prepare for impacts"+'</b>'+'<br>'+"Certain consequences of global warming are now inevitable, including sea level rise, more frequent and severe heat waves, and growing wildfire risks. Even as we work to reduce global warming emissions, we must also prepare for this dangerous new reality."+'<br>'+'<a href="https://www.nationalgeographic.com/environment/global-warming/global-warming-effects/">'+"Learn more about preparing for global warming impacts"+'</a>';
+                    v2.innerHTML=v3;
+                }
+                </script>
+        
+        
+        <div class="row" style="background-color:#262626;color:white;padding-top:0px;">
+        <div style="background-color:black;margin-bottom:20px;color:white;">
+        <br><br>
+        <span style="font-size:30px;margin-left:2px;">Sign up for our MeaningOfCare newsletter </span> <input type="text" id="newsletter" placeholder="Enter email address"name="newsletter">
+        <br><br><br>
+        </div>
+        
+        <div class="column">
+        <span style="color:#999999">ABOUT GOOD LIFE HEALTH</span>
+        <hr>
+        <span><a href=""id="a5">About Us</a></span><br>
+        </div>
+        <div class="column">
+        <span style="color:#999999">FOR PATIENTS</span>
+        <hr>
+        <span><a href=""id="a5">Contact Us</a></span><br>
+        </div>
+        <div class="column">
+        <span style="color:#999999">FOR PROFESSIONALS</span>
+        <hr>
+        <span><a href=""id="a5">For Physicians</a></span><br>
+        </div>
+        <div class="column">
+        <span style="color:#999999">RESEARCH</span>
+        <hr>
+        <span><a href=""id="a5">Research</a></span><br>
+        </div>
+        
+        <div class="column"></div>
+        
+        <div class="column">
+        <span style="color:#999999">EDUCATION</span>
+        <hr>
+        <span><a href=""id="a5">Help</a></span><br>
+        </div>
+        
+        
+            </body></html>

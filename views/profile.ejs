@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  
+  function addItem2()
+           {
+                var ul = document.getElementById("dl");
+                var li = document.createElement("li");
+                var s="Swapna";
+                li.appendChild(document.createTextNode(s));
+                ul.appendChild(li);
+           }
+    </script>
+<style>
+    @font-face {
+      font-family: 'Calistoga', cursive;
+      src: url("https://fonts.googleapis.com/css?family=Calistoga&display=swap");
+    }
+    body
+    {
+        background:linear-gradient(to right, #766dff 0%, #88f3ff 100%);
+    }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width:   300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+    background-color: white;
+    margin-left: 275px;
+    margin-top: 30px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+    .post{
+        float: right;
+        margin-right: -300px;
+    }
+
+.contact {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  width: 285px;
+  font-size: 18px;
+}
+
+
+    h2
+    {
+        text-align: center;
+        color: white;
+        font-family: 'Calistoga', cursive;
+        
+    margin-left: 275px;
+    margin-top: 130px;
+    }
+    #list{
+        background-color: #766dff;
+        border: #766dff;
+        display: block;
+        padding: 10px;
+        font: 18px;
+        font-family: 'Calistoga', cursive;
+        border-radius: 8px;
+    }
+    .links{
+        font-size: 24px;
+        padding: 20px;
+        text-align: right;
+        float: right;
+    }
+    
+#abt
+    {
+        float: left;
+        margin-left: 5px;
+
+    }
+
+</style>
+<script>
+  var decodedCooki = decodeURIComponent(document.cookie);
+                var decodedCookie=decodedCooki.split(';');
+                var count=1;
+            
+                console.log(decodedCookie);
+                
+                document.onreadystatechange = () => {
+                    if (document.readyState === 'complete') {
+                        console.log('DOM is ready.')
+                        for(var i=0;i<decodedCookie.length;i++){
+                            var cookarr=decodedCookie[i].split('=');
+                            if(decodedCookie[i].includes("name")){
+                                var name=document.getElementById('name');
+                                name.innerHTML=cookarr[1];
+                            }
+                            if(decodedCookie[i].includes("email")){
+                                var name=document.getElementById('email');
+                                name.innerHTML=cookarr[1];
+                            }
+                            if(decodedCookie[i].includes("phone")){
+                                var name=document.getElementById('phone');
+                                name.innerHTML=cookarr[1];
+                            }
+                            if(decodedCookie[i].includes("mdata")){
+                                var ul = document.getElementById("dl");
+                                var li = document.createElement("list");
+                                var cook=cookarr[1].split(',');
+                                li.setAttribute('id',"list");
+                                li.appendChild(document.createTextNode(""+cook[0]));
+                                ul.appendChild(li);
+                            }
+                           
+                        }
+                 
+                    }
+                    
+                };
+</script>
+</head>
+<body>
+<div id="abt">
+<h2 >User Profile Card</h2>
+
+<div class="card">
+  <img src="https://github.com/Swapna02/Stop_Global_Warming/blob/master/images/WhatsApp%20Image%202019-11-15%20at%204.01.23%20PM.jpeg?raw=true">
+ 
+  <h1 id="name">ghhg</h1>
+  
+  
+  <p class="contact" id="phone">hgjjh</p><br><p class="contact" id="email"></p>
+
+ 
+    </div></div>
+    <a class="links" href="/logout">Logout</a>
+    <a class="links" href="/post">Posts</a>
+    <br><br>
+    <div  class="post" >
+       
+        <ul  id="dl" style="font-size: 20px; border: 2px solid blueviolet; width: 500px;">
+            <li id="list">
+              vsvcvdvjdhvdbvnzdcvnzbcvbcn ncbn ccc xn cn  
+                </li>
+                
+                    
+        </ul>
+
+    </div>
+    <!--<ul id="dl" style="font-size: 20px; border: 2px solid black; width: 500px;">
+            <li class="list">
+                    vsvcvdvjdhvdbvnzdcvnzbcvbcn ncbn ccc xn cn  
+                      </li>
+                      <li class="list">
+
+                </li>
+                <li class="list">
+
+                </li>
+                <li class="list">
+
+                </li>
+                <li class="list" >
+        </ul>-->
+
+
+
+
+       
+
+
+</body>
+</html>
